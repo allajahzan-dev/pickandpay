@@ -12,7 +12,7 @@ export default function HeroSection() {
             md:px-5 lg:px-10 xl:px-20"
         >
             {/* Shadow */}
-            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#161c1b] to-[#3c6e4a]" />
+            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#161c1b] to-[#58655a]" />
 
             {/* Title */}
             <div className="col-span-2 h-full flex items-center">
@@ -27,7 +27,7 @@ export default function HeroSection() {
                         <h1 className={cn("text-[80px] font-extrabold")}>
                             Shop & Live Fresh.
                         </h1>
-                        <p className="text-4xl">Everything at Pick & Pay</p>
+                        <p className="text-4xl">Everything at Pick & Pay.</p>
                     </span>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
             </div>
 
             {/* Left-bottom image */}
-            <div className="absolute z-10 -bottom-10 -left-12 rotate-45 opacity-70">
+            <div className="absolute z-10 -bottom-10 -left-12 rotate-45 opacity-80">
                 <Image
                     src="/images/home/hero/image-1.png"
                     alt="Hero image"

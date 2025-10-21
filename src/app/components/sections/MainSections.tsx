@@ -1,4 +1,5 @@
 import AboutSection from "./AboutSection";
+import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
 import ReviewSection from "./ReviewSection";
 
@@ -13,10 +14,11 @@ export default function MainSection() {
             >
                 <div
                     className="absolute inset-0 z-0 
-                    bg-[linear-gradient(to_bottom,white_0%,white_2%,#292929_2%,#292929_100%)]"
+                    bg-[linear-gradient(to_bottom,white_0%,white_2%,#58655a_2%,#58655a_100%)]"
                 />
                 <AboutSection />
                 <ReviewSection />
+                <ContactSection />
             </div>
         </main>
     );

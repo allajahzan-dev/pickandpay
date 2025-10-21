@@ -14,10 +14,11 @@ export default function Navbar() {
                 <h1 className="text-xl font-bold">LOGO</h1>
             </div>
 
-            <div className="flex gap-24 items-center text-sm font-semibold tracking-widest">
+            <div className="flex gap-20 items-center text-sm font-semibold tracking-widest">
                 <NavItem item="home" />
                 <NavItem item="about" />
-                <NavItem item="service" />
+                <NavItem item="shop" />
+                <NavItem item="services" />
                 <NavItem item="contact" />
             </div>
 
