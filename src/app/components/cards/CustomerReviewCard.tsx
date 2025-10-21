@@ -8,6 +8,7 @@ export default function CustomerReviewCard() {
             <div className="flex -space-x-2">
                 {[].map((_, index) => (
                     <Image
+                        key={index}
                         src={`/images/users/user${index + 1}.png`}
                         alt={`Customer-${index + 1}`}
                         width={1000}
