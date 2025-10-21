@@ -1,25 +1,29 @@
-import { oswald } from "@/fonts/oswald";
-import { cn } from "@/lib/utils";
+"use client";
+
+import { usePathname } from "next/navigation";
+import NavItem from "./NavItem";
 
 // Navbar
 export default function Navbar() {
-  return (
-    <div className="fixed z-50 top-0 w-full px-4 py-8 text-white flex items-center justify-between
-         md:px-5 xl:px-10">
-      <div className={cn(oswald.className)}>
-        <h1 className="text-2xl font-bold">PickandPay</h1>
-      </div>
+    const pathname = usePathname();
 
-      <div className="flex gap-12 items-center font-medium">
-        <p>Home</p>
-        <p>About us</p>
-        <p>Branches</p>
-        <p>Contact</p>
-      </div>
+    return (
+        <div className="fixed z-50 top-0 w-full px-4 py-5 text-white flex items-center justify-between
+         md:px-5 lg:px-10 xl:px-20">
+            <div>
+                <h1 className="text-xl font-bold">LOGO</h1>
+            </div>
 
-      {/* <div className="">
-        <h1 className="font-medium">+7511234523</h1>
-      </div> */}
-    </div>
-  )
+            <div className="flex gap-24 items-center text-sm font-semibold tracking-widest">
+                <NavItem item="home" />
+                <NavItem item="about" />
+                <NavItem item="service" />
+                <NavItem item="contact" />
+            </div>
+
+            <div className="text-sm tracking-widest">
+                <p className="text-white font-medium">+7511234523</p>
+            </div>
+        </div>
+    )
 }

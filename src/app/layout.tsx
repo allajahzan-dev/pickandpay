@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothWrapper from "./components/animations/SmoothWrapper";
 import { urbanist } from "@/fonts/urbanist";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
     title: "Pick-and-Pay",
@@ -15,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={urbanist.className}>
+            <body className={cn(urbanist.className, "antialiased")}>
                 <SmoothWrapper>{children}</SmoothWrapper>
             </body>
         </html>
