@@ -19,10 +19,10 @@ export default function Navbar() {
             </div>
 
             <div className="flex gap-20 items-center text-sm font-semibold tracking-widest">
-                <NavItem item="home" />
+                <NavItem item="" />
                 <NavItem item="about" />
-                <NavItem item="shop" />
-                <NavItem item="services" />
+                <NavItem item="stores" />
+                <NavItem item="gallery" />
                 <NavItem item="contact" />
             </div>
 
