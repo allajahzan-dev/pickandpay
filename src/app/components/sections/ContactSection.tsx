@@ -32,7 +32,7 @@ export default function ContactSection() {
                     }
                     para={
                         <p className="w-[60%] text-lg text-muted-foreground font-medium will-change-transform">
-                            Have a question? We're always here to help.
+                            Have a question? We&apos;re always here to help.
                         </p>
                     }
                 />
