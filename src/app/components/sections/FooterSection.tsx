@@ -22,7 +22,7 @@ export default function FooterSection() {
             ref={footerRef}
             className={cn(
                 sectionClassName,
-                "bg-[#161c1b] min-h-screen relative"
+                "bg-[#161c1b] min-h-screen relative -z-10"
             )}
         >
             {/* Footer content here */}

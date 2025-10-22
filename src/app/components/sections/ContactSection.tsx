@@ -11,7 +11,10 @@ export default function ContactSection() {
     return (
         <section
             style={sectionBgImage}
-            className={cn(sectionClassName, " -mt-0.5 border-t rounded-b-[35px] xl:rounded-b-[50px]")}
+            className={cn(
+                sectionClassName,
+                "-mt-0.5 border-t rounded-b-[35px] xl:rounded-b-[50px]"
+            )}
         >
             {/* Shadow */}
             <Shadow />

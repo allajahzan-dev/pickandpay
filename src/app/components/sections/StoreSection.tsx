@@ -1,18 +1,23 @@
-import { sectionClassName } from "@/constants/styles";
+import { sectionBgImage, sectionClassName } from "@/constants/styles";
 import { cn } from "@/lib/utils";
 import SectionHeading from "../common/SectionHeading";
 import Label from "../common/Label";
 import { Store } from "lucide-react";
+import Shadow from "../common/Shadow";
 
 // Store section
 export default function StoreSection() {
     return (
         <section
+            style={sectionBgImage}
             className={cn(
                 sectionClassName,
                 "min-h-screen -mt-0.5 border-t items-center"
             )}
         >
+            {/* Shadow */}
+            <Shadow />
+
             {/* Label */}
             <Label icon={<Store size={16} />} text="Our Stores" />
 

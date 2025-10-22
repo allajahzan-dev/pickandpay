@@ -16,7 +16,7 @@ export const revealFooterSection = (footer: HTMLDivElement) => {
                 start: "top 80%",
                 end: "top top",
                 scrub: true,
-                markers: true,
+                // markers: true,
             },
         }
     );

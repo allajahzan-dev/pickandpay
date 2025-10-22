@@ -1,7 +1,9 @@
 import AboutSection from "./AboutSection";
 import ContactSection from "./ContactSection";
 import FooterSection from "./FooterSection";
+import GallerySection from "./GallerySection";
 import HeroSection from "./HeroSection";
+import ServiceSection from "./ServiceSection";
 import StoreSection from "./StoreSection";
 
 // Main section
@@ -14,13 +16,15 @@ export default function MainSection() {
                 md:mt-0 xl:rounded-t-[50px]"
             >
                 <div
-                    className="absolute inset-0 z-0 
+                    className="absolute inset-0 -z-10 
                     bg-[linear-gradient(to_bottom,white_0%,white_2%,#161c1b_2%,#161c1b_100%)]"
                 />
                 <AboutSection />
+                <ServiceSection />
                 <StoreSection />
+                <GallerySection />
                 <ContactSection />
-                <FooterSection/>
+                <FooterSection />
             </div>
         </main>
     );
