@@ -1,14 +1,18 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import NavItem from "./NavItem";
 import { Phone } from "lucide-react";
+import { sectionXpadding } from "@/constants/styles";
 
 // Navbar
 export default function Navbar() {
     return (
         <div
-            className="fixed z-50 top-0 w-full px-4 py-4 text-white flex items-center justify-between
-         md:px-5 lg:px-10 xl:px-20"
+            className={cn(
+                "fixed z-50 top-0 w-full py-4 text-white flex items-center justify-between",
+                sectionXpadding
+            )}
         >
             <div>
                 <h1 className="text-xl font-bold">LOGO</h1>

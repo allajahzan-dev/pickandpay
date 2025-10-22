@@ -1,7 +1,7 @@
 import AboutSection from "./AboutSection";
 import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
-import ReviewSection from "./ReviewSection";
+import StoreSection from "./StoreSection";
 
 // Main section
 export default function MainSection() {
@@ -17,7 +17,7 @@ export default function MainSection() {
                     bg-[linear-gradient(to_bottom,white_0%,white_2%,#58655a_2%,#58655a_100%)]"
                 />
                 <AboutSection />
-                <ReviewSection />
+                <StoreSection />
                 <ContactSection />
             </div>
         </main>

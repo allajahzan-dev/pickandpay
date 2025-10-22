@@ -1,12 +1,23 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
+// Interface for Props
+interface Props {
+    className?: string;
+}
+
 // Customer review card
-export default function CustomerReviewCard() {
+export default function CustomerReviewCard({ className }: Props) {
     return (
-        <div className="relative flex items-center gap-3 p-3 pr-5 w-fit bg-white/10 backdrop-blur-md rounded-full shadow-md">
+        <div
+            className={cn(
+                "flex items-center gap-3 p-3 pr-5 w-fit bg-white/10 backdrop-blur-md rounded-full shadow-md",
+                className
+            )}
+        >
             {/* Avatars */}
             <div className="flex -space-x-2">
-                {[1,2,3].map((ind) => (
+                {[1, 2, 3].map((ind) => (
                     <Image
                         key={ind}
                         src={`/images/users/user${ind}.png`}

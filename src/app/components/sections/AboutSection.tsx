@@ -4,6 +4,7 @@ import Shadow from "../common/Shadow";
 import Label from "../common/Label";
 import { cn } from "@/lib/utils";
 import DetialsHeading from "../common/DetialsHeading";
+import Image from "next/image";
 
 // About section
 export default function AboutSection() {
@@ -20,15 +21,19 @@ export default function AboutSection() {
                 {/* First column */}
                 <DetialsHeading
                     heading={
-                        <h1 className="text-[64px] font-medium leading-none">
+                        <>
                             A Decade of
                             <br />
                             <span className="text-[#58655a]">Quality & Care</span>
-                        </h1>
+                        </>
                     }
-                    para={`Pick&pay brings fresh products, great prices, and a friendly
-                        shopping experience to your community. Quality, convenience, and
-                        care in every visit.`}
+                    para={
+                        <p className="w-[70%] text-lg text-muted-foreground font-medium will-change-transform">
+                            Pick&pay brings fresh products, great prices, and a friendly
+                            shopping experience to your community. Quality, convenience, and
+                            care in every visit.
+                        </p>
+                    }
                 />
 
                 {/* Second column */}
@@ -47,6 +52,18 @@ export default function AboutSection() {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            {/* Left-bottom image */}
+            <div className="absolute -bottom-9 -left-9 rotate-45 opacity-50">
+                <Image
+                    src="/images/home/hero/image-1.png"
+                    alt="Hero image"
+                    width={1000}
+                    height={1000}
+                    quality={100}
+                    className="w-[260px]"
+                />
             </div>
         </section>
     );

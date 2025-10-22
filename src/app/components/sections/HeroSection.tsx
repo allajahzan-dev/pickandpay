@@ -2,14 +2,18 @@ import { cn } from "@/lib/utils";
 import { Mouse, Truck } from "lucide-react";
 import Image from "next/image";
 import CustomerReviewCard from "../cards/CustomerReviewCard";
+import { sectionXpadding } from "@/constants/styles";
+import Label from "../common/Label";
 
 // Hero section
 export default function HeroSection() {
     return (
         <section
             data-speed="0.1"
-            className="min-h-screen relative -z-10 px-4 text-white flex items-center overflow-hidden
-            md:px-5 lg:px-10 xl:px-20"
+            className={cn(
+                "min-h-screen relative -z-10 text-white flex items-center overflow-hidden",
+                sectionXpadding
+            )}
         >
             {/* Shadow */}
             <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#161c1b] to-[#58655a]" />
@@ -17,12 +21,11 @@ export default function HeroSection() {
             {/* Title */}
             <div className="col-span-2 h-full flex items-center">
                 <div className="relative -top-20 space-y-5">
-                    <span className="w-fit p-1 px-3 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white rounded-full shadow-md">
-                        <Truck size={16} />
-                        <p className="text-sm font-semibold">
-                            Fast Delivery & Easy Returns
-                        </p>
-                    </span>
+                    <Label
+                        className="border-white shadow-md"
+                        icon={<Truck size={16} />}
+                        text="Free Delivery & Easy Returns"
+                    />
                     <span>
                         <h1 className={cn("text-[80px] font-extrabold")}>
                             Shop & Live Fresh.
@@ -33,12 +36,10 @@ export default function HeroSection() {
             </div>
 
             {/* Customer review card */}
-            <div className="absolute -translate-x-1/2 left-1/2 bottom-40">
-                <CustomerReviewCard />
-            </div>
+            <CustomerReviewCard className="absolute -translate-x-1/2 left-1/2 bottom-40" />
 
             {/* Left-bottom image */}
-            <div className="absolute z-10 -bottom-10 -left-12 rotate-45 opacity-80">
+            <div className="absolute z-10 -bottom-9 -left-9 rotate-45 opacity-80">
                 <Image
                     src="/images/home/hero/image-1.png"
                     alt="Hero image"

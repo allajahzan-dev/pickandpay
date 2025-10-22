@@ -5,7 +5,10 @@ export const sectionBgImage: React.CSSProperties = {
     backgroundPosition: "center",
 };
 
+// Section padding-x
+export const sectionXpadding = "px-4 md:px-5 lg:px-10 xl:px-32";
+
 // Section classname - tailwindcss
-export const sectionClassName = `h-auto relative px-4 py-24 bg-zinc-100 flex flex-col gap-10 justify-center 
-                                 overflow-hidden will-change-transform 
-                                 md:px-5 lg:px-10 xl:px-20 xl:py-40`;
+export const sectionClassName = `h-auto relative py-24 bg-zinc-100 flex flex-col gap-8 justify-center 
+overflow-hidden will-change-transform 
+xl:py-40 ${sectionXpadding}`;

@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 interface Props {
     className?: string;
     heading: ReactNode;
-    para: string;
+    para: ReactNode;
 }
 
 // Details heading
@@ -17,10 +17,8 @@ export default function DetialsHeading({ className, heading, para }: Props) {
                 className
             )}
         >
-            {heading}
-            <p className="w-[60%] text-lg text-muted-foreground font-medium will-change-transform">
-                {para}
-            </p>
+            <h1 className="text-[64px] font-medium leading-none">{heading}</h1>
+            {para}
         </div>
     );
 }
