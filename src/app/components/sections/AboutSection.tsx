@@ -3,13 +3,19 @@ import { Home } from "lucide-react";
 import Shadow from "../common/Shadow";
 import Label from "../common/Label";
 import { cn } from "@/lib/utils";
-import DetialsHeading from "../common/DetialsHeading";
+import SectionHeading from "../common/SectionHeading";
 import Image from "next/image";
 
 // About section
 export default function AboutSection() {
     return (
-        <section style={sectionBgImage} className={cn(sectionClassName)}>
+        <section
+            style={sectionBgImage}
+            className={cn(
+                sectionClassName,
+                "-mt-5 rounded-t-[35px] md:mt-0 xl:rounded-t-[50px]"
+            )}
+        >
             {/* Shadow */}
             <Shadow />
 
@@ -19,7 +25,7 @@ export default function AboutSection() {
             {/* Details */}
             <div className="w-full relative z-10 grid grid-cols-2 items-center">
                 {/* First column */}
-                <DetialsHeading
+                <SectionHeading
                     heading={
                         <>
                             A Decade of

@@ -19,15 +19,15 @@ export default function HeroSection() {
             <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#161c1b] to-[#58655a]" />
 
             {/* Title */}
-            <div className="col-span-2 h-full flex items-center">
+            <div className="h-full flex items-center">
                 <div className="relative -top-20 space-y-5">
                     <Label
                         className="border-white shadow-md"
                         icon={<Truck size={16} />}
-                        text="Free Delivery & Easy Returns"
+                        text="Fast Delivery & Easy Returns"
                     />
                     <span>
-                        <h1 className={cn("text-[80px] font-extrabold")}>
+                        <h1 className={cn("text-[88px] font-extrabold")}>
                             Shop & Live Fresh.
                         </h1>
                         <p className="text-4xl">Everything at Pick & Pay.</p>

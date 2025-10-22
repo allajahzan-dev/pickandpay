@@ -3,7 +3,7 @@ import Shadow from "../common/Shadow";
 import Label from "../common/Label";
 import { Handshake } from "lucide-react";
 import { cn } from "@/lib/utils";
-import DetialsHeading from "../common/DetialsHeading";
+import SectionHeading from "../common/SectionHeading";
 import Image from "next/image";
 
 // Contact section
@@ -11,7 +11,7 @@ export default function ContactSection() {
     return (
         <section
             style={sectionBgImage}
-            className={cn(sectionClassName, " -mt-0.5 border-t")}
+            className={cn(sectionClassName, " -mt-0.5 border-t rounded-b-[35px] xl:rounded-b-[50px]")}
         >
             {/* Shadow */}
             <Shadow />
@@ -22,7 +22,7 @@ export default function ContactSection() {
             {/* Details */}
             <div className="w-full relative z-10 grid grid-cols-2 items-center">
                 {/* First column */}
-                <DetialsHeading
+                <SectionHeading
                     heading={
                         <>
                             How to <span className="text-[#58655a]">get in</span>

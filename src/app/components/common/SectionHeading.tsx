@@ -8,8 +8,8 @@ interface Props {
     para: ReactNode;
 }
 
-// Details heading
-export default function DetialsHeading({ className, heading, para }: Props) {
+// Section heading
+export default function SectionHeading({ className, heading, para }: Props) {
     return (
         <div
             className={cn(

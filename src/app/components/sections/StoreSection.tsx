@@ -1,6 +1,6 @@
 import { sectionClassName } from "@/constants/styles";
 import { cn } from "@/lib/utils";
-import DetialsHeading from "../common/DetialsHeading";
+import SectionHeading from "../common/SectionHeading";
 import Label from "../common/Label";
 import { Store } from "lucide-react";
 
@@ -17,7 +17,7 @@ export default function StoreSection() {
             <Label icon={<Store size={16} />} text="Our Stores" />
 
             {/* Heading */}
-            <DetialsHeading
+            <SectionHeading
                 className="items-center text-center"
                 heading={
                     <>
