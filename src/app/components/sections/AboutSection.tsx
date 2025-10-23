@@ -4,7 +4,6 @@ import Shadow from "../common/Shadow";
 import Label from "../common/Label";
 import { cn } from "@/lib/utils";
 import SectionHeading from "../common/SectionHeading";
-import Image from "next/image";
 
 // About section
 export default function AboutSection() {
@@ -13,7 +12,7 @@ export default function AboutSection() {
             style={sectionBgImage}
             className={cn(
                 sectionClassName,
-                "-mt-5 rounded-t-[35px] md:mt-0 xl:rounded-t-[50px]"
+                "-mt-5 border-b rounded-t-[35px] md:mt-0 xl:rounded-t-[50px] justify-start"
             )}
         >
             {/* Shadow */}
@@ -58,18 +57,6 @@ export default function AboutSection() {
                         </div>
                     ))}
                 </div>
-            </div>
-
-            {/* Left-bottom image */}
-            <div className="absolute -bottom-9 -left-9 rotate-45 opacity-50">
-                <Image
-                    src="/images/home/hero/image-1.png"
-                    alt="Hero image"
-                    width={1000}
-                    height={1000}
-                    quality={100}
-                    className="w-[260px]"
-                />
             </div>
         </section>
     );

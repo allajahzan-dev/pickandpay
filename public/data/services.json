@@ -1,0 +1,40 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "Icon": "Store",
+            "title": "In-Store Shopping",
+            "description": "Enjoy a smooth shopping experience with neatly arranged aisles and friendly staff ready to assist you."
+        },
+        {
+            "id": 2,
+            "Icon": "Truck",
+            "title": "Home Delivery",
+            "description": "Get your groceries delivered right to your doorstep - fresh, fast, and hassle-free."
+        },
+        {
+            "id": 3,
+            "Icon": "",
+            "title": "Customer Assistance",
+            "description": "Our friendly team is always available to help with product choices, billing, or general support."
+        },
+        {
+            "id": 4,
+            "Icon": "",
+            "title": "Fresh Produce Section",
+            "description": "Choose from a wide variety of fresh fruits, vegetables, and daily essentials, carefully sourced for quality."
+        },
+        {
+            "id": 5,
+            "Icon": "",
+            "title": "Bulk Purchase Support",
+            "description": "Buy in bulk for families, events, or businesses with special pricing and easy pickup options."
+        },
+        {
+            "id": 6,
+            "Icon": "",
+            "title": "Loyalty & Rewards Program",
+            "description": "Earn points every time you shop and enjoy exclusive member discounts and special offers."
+        }
+    ]
+}

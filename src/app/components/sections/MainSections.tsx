@@ -1,10 +1,10 @@
-import AboutSection from "./AboutSection";
-import ContactSection from "./ContactSection";
-import FooterSection from "./FooterSection";
-import GallerySection from "./GallerySection";
 import HeroSection from "./HeroSection";
+import AboutSection from "./AboutSection";
 import ServiceSection from "./ServiceSection";
 import StoreSection from "./StoreSection";
+import GallerySection from "./GallerySection";
+import ContactSection from "./ContactSection";
+import FooterSection from "./FooterSection";
 
 // Main section
 export default function MainSection() {

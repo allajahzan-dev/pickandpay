@@ -4,7 +4,6 @@ import Label from "../common/Label";
 import { Handshake } from "lucide-react";
 import { cn } from "@/lib/utils";
 import SectionHeading from "../common/SectionHeading";
-import Image from "next/image";
 
 // Contact section
 export default function ContactSection() {
@@ -48,18 +47,6 @@ export default function ContactSection() {
 
                     <div></div>
                 </div>
-            </div>
-
-            {/* Left-bottom image */}
-            <div className="absolute -bottom-9 -left-9 rotate-45 opacity-50">
-                <Image
-                    src="/images/home/hero/image-1.png"
-                    alt="Hero image"
-                    width={1000}
-                    height={1000}
-                    quality={100}
-                    className="w-[260px]"
-                />
             </div>
         </section>
     );

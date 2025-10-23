@@ -11,7 +11,7 @@ export default function CustomerReviewCard({ className }: Props) {
     return (
         <div
             className={cn(
-                "flex items-center gap-3 p-3 pr-5 w-fit bg-white/10 backdrop-blur-md rounded-full shadow-md",
+                "flex items-center gap-3 p-3 pr-5 w-fit bg-white/10 backdrop-blur-md rounded-full shadow-md will-change-transform",
                 className
             )}
         >

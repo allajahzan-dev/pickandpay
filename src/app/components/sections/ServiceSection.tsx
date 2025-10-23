@@ -3,9 +3,13 @@ import { cn } from "@/lib/utils";
 import SectionHeading from "../common/SectionHeading";
 import Label from "../common/Label";
 import { Hand } from "lucide-react";
+import { fetchServices } from "@/app/utils/fetchServices";
 
 // Service section
-export default function ServiceSection() {
+export default async function ServiceSection() {
+    // Services
+    const { services } = await fetchServices();
+
     return (
         <section
             className={cn(
@@ -32,6 +36,24 @@ export default function ServiceSection() {
                     </p>
                 }
             />
+
+            {/* Services */}
+            <div className="relative grid grid-cols-3 gap-10">
+                {services.map((service) => (
+                    <div
+                        key={service.id}
+                        className="flex flex-col items-center justify-start gap-2"
+                    >
+                        <div className="w-fit p-5 border rounded-full">
+                            {service.Icon && <service.Icon size={20} />}
+                        </div>
+                        <h1 className="text-2xl font-medium">{service.title}</h1>
+                        <p className="w-[80%] text-base text-muted-foreground text-center">
+                            {service.description}
+                        </p>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }

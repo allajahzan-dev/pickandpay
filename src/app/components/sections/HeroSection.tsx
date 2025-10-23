@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { Mouse, Truck } from "lucide-react";
-import Image from "next/image";
 import CustomerReviewCard from "../cards/CustomerReviewCard";
 import { sectionXpadding } from "@/constants/styles";
 import Label from "../common/Label";
@@ -10,13 +9,17 @@ export default function HeroSection() {
     return (
         <section
             data-speed="0.1"
+            style={{
+                backgroundImage: `url(/images/home/super-market-2.jpg)`,
+                backgroundSize: "cover",
+            }}
             className={cn(
                 "min-h-screen relative -z-10 text-white flex items-center overflow-hidden",
                 sectionXpadding
             )}
         >
             {/* Shadow */}
-            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#161c1b] to-[#58655a]" />
+            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b from-black/40 via-transparent to-black/40" />
 
             {/* Title */}
             <div className="h-full flex items-center">
@@ -37,30 +40,6 @@ export default function HeroSection() {
 
             {/* Customer review card */}
             <CustomerReviewCard className="absolute -translate-x-1/2 left-1/2 bottom-40" />
-
-            {/* Left-bottom image */}
-            <div className="absolute z-10 -bottom-9 -left-9 rotate-45 opacity-80">
-                <Image
-                    src="/images/home/hero/image-1.png"
-                    alt="Hero image"
-                    width={1000}
-                    height={1000}
-                    quality={100}
-                    className="w-[260px]"
-                />
-            </div>
-
-            {/* Right-bottom image */}
-            <div className="absolute z-10 bottom-0 -right-8">
-                <Image
-                    src="/images/home/hero/image-3.png"
-                    alt="Hero image"
-                    width={1000}
-                    height={1000}
-                    quality={100}
-                    className="w-[700px]"
-                />
-            </div>
 
             {/* Explore */}
             <span
