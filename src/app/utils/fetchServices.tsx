@@ -1,13 +1,9 @@
 import BASE_URL from "@/constants/baseUrl";
-import { LucideProps } from "lucide-react";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 // Interface for IService
 export interface IService {
     id: number;
-    Icon: ForwardRefExoticComponent<
-        Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
-    >;
+    icon: string;
     title: string;
     description: string;
 }

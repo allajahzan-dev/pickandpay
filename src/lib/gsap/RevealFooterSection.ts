@@ -13,7 +13,7 @@ export const revealFooterSection = (footer: HTMLDivElement) => {
             ease: "power3.out",
             scrollTrigger: {
                 trigger: footer,
-                start: "top 80%",
+                start: "top 60%",
                 end: "top top",
                 scrub: true,
                 // markers: true,

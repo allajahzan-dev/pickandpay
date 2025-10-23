@@ -1,7 +1,7 @@
 import { sectionBgImage, sectionClassName } from "@/constants/styles";
 import { cn } from "@/lib/utils";
 import Label from "../common/Label";
-import { Store } from "lucide-react";
+import { Image } from "lucide-react";
 import SectionHeading from "../common/SectionHeading";
 
 // Gallery section
@@ -14,7 +14,7 @@ export default function GallerySection() {
             )}
         >
             {/* Label */}
-            <Label icon={<Store size={16} />} text="Gallery" />
+            <Label icon={<Image size={16} />} text="Gallery" />
 
             {/* Heading */}
             <SectionHeading

@@ -2,39 +2,39 @@
     "services": [
         {
             "id": 1,
-            "Icon": "Store",
-            "title": "In-Store Shopping",
-            "description": "Enjoy a smooth shopping experience with neatly arranged aisles and friendly staff ready to assist you."
+            "icon": "Store",
+            "title": "Premium In-Store Shopping",
+            "description": "Experience a world-class supermarket environment designed for comfort, cleanliness, and convenience."
         },
         {
             "id": 2,
-            "Icon": "Truck",
-            "title": "Home Delivery",
-            "description": "Get your groceries delivered right to your doorstep - fresh, fast, and hassle-free."
+            "icon": "Truck",
+            "title": "Fast Home Delivery",
+            "description": "Enjoy premium grocery delivery directly to your door; quick, reliable, and handled with care to match your busy lifestyle."
         },
         {
             "id": 3,
-            "Icon": "",
-            "title": "Customer Assistance",
-            "description": "Our friendly team is always available to help with product choices, billing, or general support."
+            "icon": "UsersRound",
+            "title": "Personal Customer Assistance",
+            "description": "Our friendly, well-trained staff provide attentive support to ensure every customer enjoys a smooth and welcoming experience."
         },
         {
             "id": 4,
-            "Icon": "",
-            "title": "Fresh Produce Section",
-            "description": "Choose from a wide variety of fresh fruits, vegetables, and daily essentials, carefully sourced for quality."
+            "icon": "Leaf",
+            "title": "Fresh Produce Selection",
+            "description": "Discover hand-picked fruits, vegetables, and daily essentials always fresh, clean, and sourced with care."
         },
         {
             "id": 5,
-            "Icon": "",
-            "title": "Bulk Purchase Support",
-            "description": "Buy in bulk for families, events, or businesses with special pricing and easy pickup options."
+            "icon": "Package",
+            "title": "Bulk & Corporate Orders",
+            "description": "From family events to business needs, enjoy special rates and personalized handling for large or recurring orders."
         },
         {
             "id": 6,
-            "Icon": "",
-            "title": "Loyalty & Rewards Program",
-            "description": "Earn points every time you shop and enjoy exclusive member discounts and special offers."
+            "icon": "Gift",
+            "title": "Loyalty & Rewards",
+            "description": "Earn exclusive points and rewards every time you shop; It's our way of saying thank you for trusting Pick & Pay."
         }
     ]
 }
