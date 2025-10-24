@@ -8,7 +8,6 @@ import Label from "../common/Label";
 export default function HeroSection() {
     return (
         <section
-            id="home"
             data-speed="0.1"
             style={{
                 backgroundImage: `url(/images/home/hero/hero-image.jpg)`,

@@ -5,19 +5,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Reveal footer section
 export const revealFooterSection = (footer: HTMLDivElement) => {
-    gsap.fromTo(
-        footer,
-        { y: -300 },
-        {
-            y: 0,
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: footer,
-                start: "top 60%",
-                end: "top top",
-                scrub: true,
-                // markers: true,
-            },
-        }
-    );
+    gsap.set(footer, { y: -400 });
+
+    gsap.to(footer, {
+        y: 0,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: footer,
+            start: "top 60%",
+            end: "top top",
+            scrub: true,
+            // markers: true,
+        },
+    });
 };

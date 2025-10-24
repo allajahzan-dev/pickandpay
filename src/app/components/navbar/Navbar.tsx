@@ -9,14 +9,13 @@ import { sectionXpadding } from "@/constants/styles";
 export default function Navbar() {
     return (
         <div
+            id="home"
             className={cn(
                 "fixed z-50 top-0 w-full py-4 text-white flex items-center justify-between",
                 sectionXpadding
             )}
         >
-            <div>
-                <h1 className="text-xl font-bold">LOGO</h1>
-            </div>
+            <h1 className="text-xl font-bold">LOGO</h1>
 
             <div className="flex gap-20 items-center text-sm font-semibold tracking-widest">
                 <NavItem item="home" />
