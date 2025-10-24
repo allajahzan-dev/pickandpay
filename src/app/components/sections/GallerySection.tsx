@@ -17,14 +17,14 @@ export default function GallerySection() {
         >
             <Shadow />
             {/* Label */}
-            <Label icon={<Camera size={16} />} text="Gallery" />
+            <Label icon={<Camera size={16} />} text="Our Gallery" />
 
             {/* Heading */}
             <SectionHeading
                 className="items-center text-center"
                 heading={
                     <>
-                        Inside <span className="text-[#58655a]">Pick & Pay</span>
+                        Inside <span className="text-[#58655a]">pick & pay</span>
                     </>
                 }
                 para={

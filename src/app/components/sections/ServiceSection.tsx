@@ -37,7 +37,7 @@ export default async function ServiceSection() {
                 className="items-center text-center"
                 heading={
                     <>
-                        What We <span className="text-[#58655a]">Offer</span>
+                        What we <span className="text-[#58655a]">offer</span>
                     </>
                 }
                 para={
@@ -71,7 +71,7 @@ export default async function ServiceSection() {
             </div>
 
             {/* Button */}
-            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/80 p-5 px-8 mt-12 text-lg shadow-md">
+            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/90 p-5 px-8 mt-12 text-lg cursor-pointer shadow-md">
                 Contact Us
             </Button>
         </section>

@@ -8,10 +8,7 @@ import SectionHeading from "../common/SectionHeading";
 // About section
 export default function AboutSection() {
     return (
-        <section
-            style={sectionBgImage}
-            className={cn(sectionClassName)}
-        >
+        <section style={sectionBgImage} className={cn(sectionClassName)}>
             {/* Shadow */}
             <Shadow />
 
@@ -26,7 +23,7 @@ export default function AboutSection() {
                         <>
                             A Decade of
                             <br />
-                            <span className="text-[#58655a]">Quality & Care</span>
+                            <span className="text-[#58655a]">quality & care</span>
                         </>
                     }
                     para={

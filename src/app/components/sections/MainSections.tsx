@@ -3,8 +3,10 @@ import AboutSection from "./AboutSection";
 import ServiceSection from "./ServiceSection";
 import StoreSection from "./StoreSection";
 import GallerySection from "./GallerySection";
+import ReviewSection from "./ReviewSection";
 import ContactSection from "./ContactSection";
 import FooterSection from "./FooterSection";
+import FaqSection from "./FaqSection";
 
 // Main section
 export default function MainSection() {
@@ -23,6 +25,8 @@ export default function MainSection() {
                 <ServiceSection />
                 <StoreSection />
                 <GallerySection />
+                <ReviewSection />
+                <FaqSection />
                 <ContactSection />
                 <FooterSection />
             </div>

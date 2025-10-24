@@ -26,9 +26,9 @@ export default function StoreSection() {
                 className="items-center text-center"
                 heading={
                     <>
-                        Our <span className="text-[#58655a]">Growing</span>
+                        Our <span className="text-[#58655a]">growing</span>
                         <br />
-                        <span className="text-[#58655a]">Network</span> of Stores
+                        <span className="text-[#58655a]">network</span> of stores
                     </>
                 }
                 para={
