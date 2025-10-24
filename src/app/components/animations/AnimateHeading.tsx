@@ -10,7 +10,7 @@ interface AnimatedHeadingProps {
 // Animated heading
 const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({ children }) => {
     // Helper to recursively extract words & preserve spans/br
-    const renderContent: any = (node: any, i: number) => {
+    const renderContent = (node: React.ReactNode, i: number): React.ReactNode => {
         if (typeof node === "string") {
             return node.split(/(\s+)/).map((word, j) => {
                 if (word.trim() === "") return " ";
@@ -22,7 +22,7 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({ children }) => {
                         whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
                         transition={{
                             duration: 0.5,
-                            delay: i * 0.1 + j * 0.05, // sequential stagger
+                            delay: i * 0.1 + j * 0.05,
                             ease: [0.25, 0.1, 0.25, 1],
                         }}
                         viewport={{ once: true }}
@@ -36,7 +36,7 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({ children }) => {
         // Preserve nested JSX like <span> or <br />
         if (React.isValidElement(node)) {
             if (node.type === "br") return <br key={`br-${i}`} />;
-            const el = node as React.ReactElement<any, any>;
+            const el = node as React.ReactElement<React.PropsWithChildren<unknown>>;
             return React.cloneElement(
                 el,
                 { key: i },
