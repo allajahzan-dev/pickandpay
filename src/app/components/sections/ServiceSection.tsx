@@ -5,6 +5,7 @@ import Label from "../common/Label";
 import { HandHelping } from "lucide-react";
 import { fetchServices } from "@/app/utils/fetchServices";
 import { Store, Truck, UsersRound, Leaf, Package, Gift } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 // Service section
 export default async function ServiceSection() {
@@ -49,7 +50,7 @@ export default async function ServiceSection() {
             />
 
             {/* Services */}
-            <div className="relative grid grid-cols-3 gap-12 mt-12">
+            <div className="grid grid-cols-3 gap-12 mt-12">
                 {services.map((service) => {
                     const IconComponent = iconsMap[service.icon];
                     return (
@@ -57,10 +58,10 @@ export default async function ServiceSection() {
                             key={service.id}
                             className="flex flex-col items-center justify-start gap-2"
                         >
-                            <div className="w-fit p-5 border rounded-full">
+                            <div className="w-fit p-5 border rounded-full shadow-inner">
                                 {IconComponent && <IconComponent size={20} />}
                             </div>
-                            <h1 className="text-2xl font-medium">{service.title}</h1>
+                            <h1 className="text-2xl font-medium mt-2">{service.title}</h1>
                             <p className="w-[80%] text-base text-muted-foreground text-center">
                                 {service.description}
                             </p>
@@ -68,6 +69,11 @@ export default async function ServiceSection() {
                     );
                 })}
             </div>
+
+            {/* Button */}
+            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/80 text-base p-5 px-8 mt-12">
+                Contact Us
+            </Button>
         </section>
     );
 }

@@ -13,7 +13,7 @@ export default function Label({ className, icon, text }: Props) {
     return (
         <span
             className={cn(
-                "w-fit p-1 px-3 flex items-center gap-2 bg-white/10 backdrop-blur-md border rounded-full",
+                "w-fit p-1 px-3 flex items-center gap-2 bg-white/10 backdrop-blur-md border rounded-full will-change-transform",
                 className
             )}
         >

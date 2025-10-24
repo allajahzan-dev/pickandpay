@@ -1,8 +1,10 @@
-import { sectionBgImage, sectionClassName } from "@/constants/styles";
+import { sectionClassName } from "@/constants/styles";
 import { cn } from "@/lib/utils";
 import Label from "../common/Label";
-import { Image } from "lucide-react";
+import { Camera } from "lucide-react";
 import SectionHeading from "../common/SectionHeading";
+import Shadow from "../common/Shadow";
+import MarqueeImages from "../animations/MarqueeImages";
 
 // Gallery section
 export default function GallerySection() {
@@ -10,11 +12,12 @@ export default function GallerySection() {
         <section
             className={cn(
                 sectionClassName,
-                "min-h-screen -mt-0.5 border-t items-center"
+                "min-h-screen -mt-0.5 border-t items-center px-0 md:px-0 lg:px-0 xl:px-0"
             )}
         >
+            <Shadow />
             {/* Label */}
-            <Label icon={<Image size={16} />} text="Gallery" />
+            <Label icon={<Camera size={16} />} text="Gallery" />
 
             {/* Heading */}
             <SectionHeading
@@ -32,6 +35,9 @@ export default function GallerySection() {
                     </p>
                 }
             />
+
+            {/* Images */}
+            <MarqueeImages />
         </section>
     );
 }

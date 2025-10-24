@@ -10,10 +10,7 @@ export default function AboutSection() {
     return (
         <section
             style={sectionBgImage}
-            className={cn(
-                sectionClassName,
-                "-mt-5 border-b rounded-t-[35px] md:mt-0 xl:rounded-t-[50px] justify-start"
-            )}
+            className={cn(sectionClassName)}
         >
             {/* Shadow */}
             <Shadow />
@@ -34,7 +31,7 @@ export default function AboutSection() {
                     }
                     para={
                         <p className="w-[70%] text-lg text-muted-foreground font-medium will-change-transform">
-                            Pick&pay brings fresh products, great prices, and a friendly
+                            Pick & pay brings fresh products, great prices, and a friendly
                             shopping experience to your community. Quality, convenience, and
                             care in every visit.
                         </p>
@@ -44,16 +41,14 @@ export default function AboutSection() {
                 {/* Second column */}
                 <div className="grid grid-cols-2 grid-rows-2 gap-10">
                     {[
-                        { h1: "12+", p: "Years of Experience" },
-                        { h1: "100k+", p: "Happy Customers" },
-                        { h1: "12+", p: "Years of Experience" },
-                        { h1: "12+", p: "Years of Experience" },
+                        { h1: "12+", p: "Years of experience" },
+                        { h1: "100k+", p: "Happy customers" },
+                        { h1: "12+", p: "Years of experience" },
+                        { h1: "12+", p: "Years of experience" },
                     ].map((item, ind) => (
-                        <div key={ind} className="space-y-2">
+                        <div key={ind} className="space-y-4">
                             <h1 className="text-5xl text-[#58655a] font-medium">{item.h1}</h1>
-                            <p className="text-lg text-muted-foreground font-medium">
-                                {item.p}
-                            </p>
+                            <p className="text-lg text-muted-foreground">{item.p}</p>
                         </div>
                     ))}
                 </div>

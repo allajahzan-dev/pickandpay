@@ -10,7 +10,7 @@ export default function HeroSection() {
         <section
             data-speed="0.1"
             style={{
-                backgroundImage: `url(/images/home/super-market-2.jpg)`,
+                backgroundImage: `url(/images/home/hero/hero-image.jpg)`,
                 backgroundSize: "cover",
             }}
             className={cn(

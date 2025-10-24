@@ -20,7 +20,7 @@ export default function CustomerReviewCard({ className }: Props) {
                 {[1, 2, 3].map((ind) => (
                     <Image
                         key={ind}
-                        src={`/images/users/user${ind}.png`}
+                        src={`/images/home/users/user${ind}.png`}
                         alt={`Customer-${ind}`}
                         width={1000}
                         height={1000}
