@@ -9,24 +9,29 @@ export default function MarqueeImages() {
     const wrapperRef = useRef<HTMLDivElement>(null);
     const contentRef = useRef<HTMLDivElement>(null);
 
+    // Animation
     useEffect(() => {
         if (wrapperRef.current && contentRef.current) {
             marquee(contentRef.current, wrapperRef.current);
         }
     }, []);
+
     return (
         <div
             ref={wrapperRef}
-            className="relative w-full flex items-center gap-5 mt-12 overflow-hidden"
+            className="relative w-full flex items-center gap-5 mt-8"
         >
             <div ref={contentRef} className="flex items-center gap-5">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((_, ind) => (
+                {[
+                    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                    10, 11, 12, 13,
+                ].map((num, ind) => (
                     <div
                         key={ind}
-                        className="h-[400px] w-[300px] p-2 border rounded-3xl shadow"
+                        className="h-[400px] w-[300px] p-2 border rounded-3xl shadow-md"
                     >
                         <Image
-                            src={`/images/home/gallery/img${ind + 1}.jpg`}
+                            src={`/images/home/gallery/img${num}.jpg`}
                             alt="Gallery image"
                             width={1000}
                             height={1000}

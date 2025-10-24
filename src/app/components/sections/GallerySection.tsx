@@ -24,12 +24,12 @@ export default function GallerySection() {
                 className="items-center text-center"
                 heading={
                     <>
-                        Inside <span className="text-[#58655a]">Pick&Pay</span>
+                        Inside <span className="text-[#58655a]">Pick & Pay</span>
                     </>
                 }
                 para={
                     <p className="w-[40%] text-lg text-muted-foreground font-medium will-change-transform">
-                        Discover the vibrant world of PickAndPay through our gallery - where
+                        Discover the vibrant world of Pick & Pay through our gallery; where
                         freshness, quality, and design come together to redefine your
                         shopping experience.
                     </p>

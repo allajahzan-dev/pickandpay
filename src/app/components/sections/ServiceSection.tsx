@@ -42,7 +42,7 @@ export default async function ServiceSection() {
                 }
                 para={
                     <p className="w-[40%] text-lg text-muted-foreground font-medium will-change-transform">
-                        We care about your comfort! Pick&Pay provides friendly in-store
+                        We care about your comfort! Pick & Pay provides friendly in-store
                         service, fresh food sections, online ordering, and quick home
                         delivery everything you need, all in one place
                     </p>
@@ -56,7 +56,7 @@ export default async function ServiceSection() {
                     return (
                         <div
                             key={service.id}
-                            className="flex flex-col items-center justify-start gap-2"
+                            className="flex flex-col items-center justify-start gap-2 will-change-transform"
                         >
                             <div className="w-fit p-5 border rounded-full shadow-inner">
                                 {IconComponent && <IconComponent size={20} />}
@@ -71,7 +71,7 @@ export default async function ServiceSection() {
             </div>
 
             {/* Button */}
-            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/80 text-base p-5 px-8 mt-12">
+            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/80 p-5 px-8 mt-12 text-lg shadow-md">
                 Contact Us
             </Button>
         </section>

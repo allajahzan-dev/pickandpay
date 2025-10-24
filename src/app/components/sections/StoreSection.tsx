@@ -33,7 +33,7 @@ export default function StoreSection() {
                 }
                 para={
                     <p className="w-[45%] text-lg text-muted-foreground font-medium will-change-transform">
-                        From our first outlet to multiple locations today, PickAndPay
+                        From our first outlet to multiple locations today, Pick & Pay
                         continues to expand with one goal to bring freshness, convenience,
                         and quality shopping closer to you.
                     </p>
