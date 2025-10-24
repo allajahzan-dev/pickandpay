@@ -1,6 +1,7 @@
 import { Fragment, ReactNode } from "react";
 import ScrollSmoother from "./ScrollSmoother";
 import Navbar from "../navbar/Navbar";
+import SmoothBottomBlur from "./BottomBlur";
 
 // Smooth wrapper
 export default function SmoothWrapper({ children }: { children: ReactNode }) {

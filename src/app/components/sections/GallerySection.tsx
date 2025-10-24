@@ -28,10 +28,9 @@ export default function GallerySection() {
                     </>
                 }
                 para={
-                    <p className="w-[40%] text-lg text-muted-foreground font-medium will-change-transform">
-                        Discover the vibrant world of Pick & Pay through our gallery; where
-                        freshness, quality, and design come together to redefine your
-                        shopping experience.
+                    <p className="w-[60%] text-lg text-muted-foreground font-medium will-change-transform">
+                        Explore Pick & Pay&apos;s gallery, where freshness, quality, and
+                        design elevate your shopping experience.
                     </p>
                 }
             />

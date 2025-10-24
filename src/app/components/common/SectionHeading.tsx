@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
+import AnimatedHeading from "../animations/AnimateHeading";
 
 // Interface for Props
 interface Props {
@@ -17,7 +18,7 @@ export default function SectionHeading({ className, heading, para }: Props) {
                 className
             )}
         >
-            <h1 className="text-[64px] font-medium leading-[1.1]">{heading}</h1>
+            <AnimatedHeading>{heading}</AnimatedHeading>
             {para}
         </div>
     );

@@ -23,12 +23,12 @@ export default function MarqueeImages() {
         >
             <div ref={contentRef} className="flex items-center gap-5">
                 {[
-                    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1, 2, 3, 4, 5, 6, 7, 8, 9,
-                    10, 11, 12, 13,
+                    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                    11, 12,
                 ].map((num, ind) => (
                     <div
                         key={ind}
-                        className="h-[400px] w-[300px] p-2 border rounded-3xl shadow-md"
+                        className="h-[408px] w-[324px] p-2 border rounded-3xl shadow-lg"
                     >
                         <Image
                             src={`/images/home/gallery/img${num}.jpg`}
