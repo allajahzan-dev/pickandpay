@@ -28,7 +28,7 @@ export default function MarqueeImages() {
                 ].map((num, ind) => (
                     <div
                         key={ind}
-                        className="h-[408px] w-[324px] p-2 border rounded-3xl shadow-lg"
+                        className="h-[408px] w-[324px] p-2 border rounded-3xl shadow-md"
                     >
                         <Image
                             src={`/images/home/gallery/img${num}.jpg`}

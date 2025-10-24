@@ -1,0 +1,40 @@
+{
+    "reviews": [
+        {
+            "name": "Fatima Al Zarooni",
+            "location": "Business Bay, J One Tower",
+            "review": "I love shopping here! Everything is fresh, clean, and perfectly organized. Their delivery service is quick and reliable, and the staff are always polite. Truly one of the best supermarkets in Dubai — consistent quality every time I visit.",
+            "image": "/images/home/users/user1.png"
+        },
+        {
+            "name": "Rahul Mehta",
+            "location": "Business Bay, Upside Living Tower",
+            "review": "Great prices, exciting offers, and smooth online ordering every week. Deliveries are always on time, and the store is neatly maintained.",
+            "image": "/images/home/users/user2.png"
+        },
+        {
+            "name": "Maria Gonzalez",
+            "location": "Meydan, Azizi Revera 35",
+            "review": "Lovely store with great imported items and friendly staff. Everything is neatly arranged, and I always find what I need easily.",
+            "image": "/images/home/users/user3.png"
+        },
+        {
+            "name": "Ahmed Khan",
+            "location": "Al Jaddaf, Aliyah by Azizi",
+            "review": "Very clean and well-organized store. Staff are always friendly and helpful, making shopping a smooth and pleasant experience every time.",
+            "image": "/images/home/users/user4.png"
+        },
+        {
+            "name": "Sarah Johnson",
+            "location": "Maritime City",
+            "review": "Excellent quality and service every time! Fresh produce, fast deliveries, and courteous staff make grocery shopping easy and enjoyable. I can always rely on them for a smooth experience and great value for money.",
+            "image": "/images/home/users/user5.png"
+        },
+        {
+            "name": "Hassan Al Farsi",
+            "location": "Studio City, Al Matter Building",
+            "review": "Affordable prices with a wide variety of products. The website is easy to use, deliveries are always on time, and their staff go the extra mile.",
+            "image": "/images/home/users/user6.png"
+        }
+    ]
+}
