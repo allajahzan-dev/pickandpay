@@ -8,7 +8,7 @@ import SectionHeading from "../common/SectionHeading";
 // About section
 export default function AboutSection() {
     return (
-        <section style={sectionBgImage} className={cn(sectionClassName)}>
+        <section id="about" style={sectionBgImage} className={cn(sectionClassName)}>
             {/* Shadow */}
             <Shadow />
 

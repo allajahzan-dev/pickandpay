@@ -19,7 +19,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex gap-20 items-center text-sm font-semibold tracking-widest">
-                <NavItem item="" />
+                <NavItem item="home" />
                 <NavItem item="about" />
                 <NavItem item="stores" />
                 <NavItem item="gallery" />

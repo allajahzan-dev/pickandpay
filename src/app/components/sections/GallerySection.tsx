@@ -10,6 +10,7 @@ import MarqueeImages from "../animations/MarqueeImages";
 export default function GallerySection() {
     return (
         <section
+            id="gallery"
             className={cn(
                 sectionClassName,
                 "min-h-screen -mt-0.5 border-t items-center px-0 md:px-0 lg:px-0 xl:px-0"

@@ -9,6 +9,7 @@ import Shadow from "../common/Shadow";
 export default function StoreSection() {
     return (
         <section
+            id="stores"
             style={sectionBgImage}
             className={cn(
                 sectionClassName,

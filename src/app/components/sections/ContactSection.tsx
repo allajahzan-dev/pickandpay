@@ -9,6 +9,7 @@ import SectionHeading from "../common/SectionHeading";
 export default function ContactSection() {
     return (
         <section
+            id="contact"
             style={sectionBgImage}
             className={cn(
                 sectionClassName,
