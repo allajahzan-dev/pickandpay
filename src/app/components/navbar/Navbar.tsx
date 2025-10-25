@@ -2,16 +2,12 @@
 
 import { cn } from "@/lib/utils";
 import NavItem from "./NavItem";
-import { Facebook, Instagram, Phone, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 import { sectionXpadding } from "@/constants/styles";
 import { useEffect, useState } from "react";
 import { scrollSmoother } from "@/lib/gsap/ScrollSmoother";
 import { Hamburger } from "./Hamburger";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { scrollToSection } from "@/lib/gsap/ScrollToSection";
-import Link from "next/link";
-import { oswald } from "@/fonts/oswald";
 
 // Interface for Props
 interface Props {
@@ -21,7 +17,7 @@ interface Props {
 // Navbar
 export default function Navbar({ className }: Props) {
     // Navbar state
-    const [navVisible, setNavVisible] = useState(true);
+    const [navVisible, _setNavVisible] = useState(true);
 
     // Toggle navitems
     const [toggle, setToggle] = useState<boolean>(false);
@@ -54,7 +50,7 @@ export default function Navbar({ className }: Props) {
         <div
             id="home"
             className={cn(
-                "fixed z-50 top-0 w-full py-5 bg-white/90 backdrop-blur-sm flex items-center justify-between",
+                "fixed z-50 top-0 w-full py-5 bg-white backdrop-blur-sm flex items-center justify-between",
                 sectionXpadding,
                 "transition-all duration-300 ease-in-out",
                 "lg:text-white lg:bg-transparent lg:backdrop-blur-none",
@@ -106,6 +102,7 @@ export default function Navbar({ className }: Props) {
                         "relative h-full w-full pb-4 flex flex-col items-start gap-6 font-semibold"
                     )}
                 >
+                    {/* Links */}
                     <div className="flex flex-col gap-3">
                         <p className="text-sm text-zinc-600">Links</p>
 
@@ -130,6 +127,7 @@ export default function Navbar({ className }: Props) {
                         </div>
                     </div>
 
+                    {/* Contact Info */}
                     <div className="flex flex-col gap-3">
                         <p className="text-sm text-zinc-600">Get in touch</p>
 
@@ -137,7 +135,6 @@ export default function Navbar({ className }: Props) {
                             className="flex flex-col gap-1 text-lg 
                               [&>:is(p,a):hover]:text-[#58655a] [&>:is(p,a):hover]:transition-colors [&>:is(p,a):hover]:duration-300"
                         >
-                            {/* Contact Info */}
                             <a
                                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ofla.in"
                                 target="_blank"

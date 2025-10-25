@@ -5,7 +5,7 @@ import { urbanist } from "@/fonts/urbanist";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-    title: "Pick-and-Pay",
+    title: "Pick & Pay",
     description: "Supermarket brand",
     themeColor: "#ffffff",
 };
@@ -17,11 +17,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <head>
-                <meta name="color-scheme" content="light" />
-                <meta name="supported-color-schemes" content="light" />
-                <meta name="darkreader-lock" />
-            </head>
             <body className={cn(urbanist.className, "antialiased")}>
                 <SmoothWrapper>{children}</SmoothWrapper>
             </body>

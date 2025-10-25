@@ -1,27 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { sectionClassName, sectionXpadding } from "@/constants/styles";
+import { sectionXpadding } from "@/constants/styles";
 import { cn } from "@/lib/utils";
-import { revealFooterSection } from "@/lib/gsap/RevealFooterSection";
 import { scrollToSection } from "@/lib/gsap/ScrollToSection";
 import { Copyright, Facebook, Instagram, Linkedin } from "lucide-react";
 
 // Footer section
 export default function FooterSection() {
-    const footerRef = useRef(null);
-
-    // Animation
-    useEffect(() => {
-        const footer = footerRef.current;
-        if (!footer) return;
-
-        revealFooterSection(footer);
-    }, []);
-
     return (
         <section
-            ref={footerRef}
             className={cn(sectionXpadding, "h-auto py-14 relative z-0 bg-[#161c1b]")}
         >
             {/* Details */}
