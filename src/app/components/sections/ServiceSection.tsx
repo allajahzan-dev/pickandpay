@@ -41,16 +41,21 @@ export default async function ServiceSection() {
                     </>
                 }
                 para={
-                    <p className="w-[40%] text-lg text-muted-foreground font-medium will-change-transform">
-                        We care about your comfort! Pick & Pay provides friendly in-store
-                        service, fresh food sections, online ordering, and quick home
-                        delivery everything you need, all in one place
+                    <p
+                        className="w-full text-base text-muted-foreground font-medium will-change-transform
+                        sm:w-[70%] md:w-[60%] xl:w-[40%] md:text-lg"
+                    >
+                        We care about your comfort! Pick & Pay offers friendly service,
+                        fresh food, online ordering, and fast home delivery.
                     </p>
                 }
             />
 
             {/* Services */}
-            <div className="grid grid-cols-3 gap-12 mt-12">
+            <div
+                className="grid grid-cols-1 gap-12 mt-12
+                md:grid-cols-2 xl:grid-cols-3"
+            >
                 {services.map((service) => {
                     const IconComponent = iconsMap[service.icon];
                     return (
@@ -58,11 +63,19 @@ export default async function ServiceSection() {
                             key={service.id}
                             className="flex flex-col items-center justify-start gap-2 will-change-transform"
                         >
-                            <div className="w-fit p-5 border rounded-full shadow-inner">
+                            <div className="w-fit p-5 border rounded-full shadow-md">
                                 {IconComponent && <IconComponent size={20} />}
                             </div>
-                            <h1 className="text-2xl font-medium mt-2">{service.title}</h1>
-                            <p className="w-[80%] text-base text-muted-foreground text-center">
+                            <h1
+                                className="text-xl text-center font-medium mt-2
+                                md:text-2xl"
+                            >
+                                {service.title}
+                            </h1>
+                            <p
+                                className="w-full text-sm text-muted-foreground text-center
+                                sm:w-[80%] md:w-[85%] xl:w-[90%] md:text-base"
+                            >
                                 {service.description}
                             </p>
                         </div>

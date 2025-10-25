@@ -3,7 +3,7 @@
         {
             "id": 1,
             "icon": "Store",
-            "title": "Premium In-Store Shopping",
+            "title": "In-Store Shopping",
             "description": "Experience a world-class supermarket environment designed for comfort, cleanliness, and convenience."
         },
         {
@@ -15,7 +15,7 @@
         {
             "id": 3,
             "icon": "UsersRound",
-            "title": "Personal Customer Assistance",
+            "title": "Customer Assistance",
             "description": "Our friendly, well-trained staff provide attentive support to ensure every customer enjoys a smooth and welcoming experience."
         },
         {
