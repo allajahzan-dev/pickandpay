@@ -44,7 +44,7 @@ export default function AboutSection() {
                 {/* Second column */}
                 <div
                     className="grid grid-cols-2 gap-10
-                     md:grid-cols-4 lg:grid-cols-2 md:gap-5 lg:gap-10"
+                    md:grid-cols-4 lg:grid-cols-2 md:gap-5 lg:gap-10"
                 >
                     {[
                         { h1: "12+", p: "Years of experience" },

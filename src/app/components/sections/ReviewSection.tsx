@@ -43,7 +43,9 @@ export default async function ReviewSection() {
                 {reviews.map((review, ind) => (
                     <div key={ind} className="mb-5 break-inside-avoid">
                         <div className="bg-white p-6 space-y-5 border rounded-2xl shadow-md">
-                            <p className="text-muted-foreground">&quot;{review.review}&quot;</p>
+                            <p className="text-muted-foreground font-medium">
+                                &quot;{review.review}&quot;
+                            </p>
                             <div className="flex items-center gap-5">
                                 <Image
                                     src={review.image}

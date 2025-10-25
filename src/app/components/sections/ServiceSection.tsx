@@ -67,7 +67,7 @@ export default async function ServiceSection() {
                                 {IconComponent && <IconComponent size={20} />}
                             </div>
                             <h1
-                                className="text-xl text-center font-medium mt-2
+                                className="text-xl text-center font-semibold mt-2
                                 md:text-2xl"
                             >
                                 {service.title}
@@ -84,7 +84,7 @@ export default async function ServiceSection() {
             </div>
 
             {/* Button */}
-            <Button className="bg-[#58655a] hover:bg-[#58655a]/90 p-5 px-8 mt-12 text-lg cursor-pointer shadow-md">
+            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/90 p-5 px-8 mt-12 text-lg cursor-pointer shadow-md">
                 Know More
             </Button>
         </section>
