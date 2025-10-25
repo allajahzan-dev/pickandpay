@@ -10,7 +10,7 @@ export default function FaqSection() {
         <section
             className={cn(
                 sectionClassName,
-                "min-h-screen -mt-0.5 border-t items-center"
+                "relative z-10 min-h-screen -mt-0.5 border-t items-center"
             )}
         >
             {/* Label */}

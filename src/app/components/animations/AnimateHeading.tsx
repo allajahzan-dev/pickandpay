@@ -50,7 +50,10 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({ children }) => {
     };
 
     return (
-        <h1 className="text-[64px] font-medium leading-[1.1]">
+        <h1
+            className="text-[42px] font-medium leading-[1.1]
+        md:text-[64px]"
+        >
             {React.Children.map(children, (child, i) => renderContent(child, i))}
         </h1>
     );

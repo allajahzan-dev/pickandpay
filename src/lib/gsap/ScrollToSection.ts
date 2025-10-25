@@ -9,7 +9,7 @@ export const scrollToSection = (sectionId: string) => {
     if (!target) return;
 
     gsap.to(window, {
-        scrollTo: { y: target, offsetY: 0 },
+        scrollTo: { y: sectionId === "home" ? 0 : target, offsetY: 0 },
         duration: 1,
         ease: "power2.inOut",
     });
