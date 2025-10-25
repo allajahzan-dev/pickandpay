@@ -20,6 +20,7 @@ export default function RootLayout({
             <head>
                 <meta name="color-scheme" content="light" />
                 <meta name="supported-color-schemes" content="light" />
+                <meta name="darkreader-lock" />
             </head>
             <body className={cn(urbanist.className, "antialiased")}>
                 <SmoothWrapper>{children}</SmoothWrapper>

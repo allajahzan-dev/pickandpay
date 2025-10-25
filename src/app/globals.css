@@ -119,6 +119,9 @@
   }
 }
 
-:root {
+html,
+body {
+  background: #ffffff !important;
   color-scheme: light;
+  forced-color-adjust: none;
 }
