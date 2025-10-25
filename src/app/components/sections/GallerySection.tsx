@@ -1,4 +1,4 @@
-import { sectionClassName } from "@/constants/styles";
+import { sectionClassName, sectionXpadding } from "@/constants/styles";
 import { cn } from "@/lib/utils";
 import Label from "../common/Label";
 import { ImageIcon } from "lucide-react";
@@ -22,14 +22,17 @@ export default function GallerySection() {
 
             {/* Heading */}
             <SectionHeading
-                className="items-center text-center"
+                className={cn("items-center text-center", sectionXpadding)}
                 heading={
                     <>
                         Inside <span className="text-[#58655a]">pick & pay</span>
                     </>
                 }
                 para={
-                    <p className="w-[60%] text-lg text-muted-foreground font-medium will-change-transform">
+                    <p
+                        className="w-full text-base text-muted-foreground font-medium will-change-transform
+                        sm:w-[70%] md:w-[58%] md:text-lg"
+                    >
                         Explore Pick & Pay&apos;s gallery, where freshness, quality, and
                         design elevate your shopping experience.
                     </p>

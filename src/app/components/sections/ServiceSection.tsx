@@ -43,7 +43,7 @@ export default async function ServiceSection() {
                 para={
                     <p
                         className="w-full text-base text-muted-foreground font-medium will-change-transform
-                        sm:w-[70%] md:w-[60%] xl:w-[40%] md:text-lg"
+                        sm:w-[70%] md:w-[58%] md:text-lg"
                     >
                         We care about your comfort! Pick & Pay offers friendly service,
                         fresh food, online ordering, and fast home delivery.
@@ -63,7 +63,7 @@ export default async function ServiceSection() {
                             key={service.id}
                             className="flex flex-col items-center justify-start gap-2 will-change-transform"
                         >
-                            <div className="w-fit p-5 border rounded-full shadow-md">
+                            <div className="w-fit p-5 bg-[#58655a]/10 rounded-full shadow-md">
                                 {IconComponent && <IconComponent size={20} />}
                             </div>
                             <h1
@@ -73,7 +73,7 @@ export default async function ServiceSection() {
                                 {service.title}
                             </h1>
                             <p
-                                className="w-full text-sm text-muted-foreground text-center
+                                className="w-[90%] text-sm text-muted-foreground text-center
                                 sm:w-[80%] md:w-[85%] xl:w-[90%] md:text-base"
                             >
                                 {service.description}
@@ -84,7 +84,7 @@ export default async function ServiceSection() {
             </div>
 
             {/* Button */}
-            <Button className="bg-[#161c1b] hover:bg-[#161c1b]/90 p-5 px-8 mt-12 text-lg cursor-pointer shadow-md">
+            <Button className="bg-[#58655a] hover:bg-[#58655a]/90 p-5 px-8 mt-12 text-lg cursor-pointer shadow-md">
                 Know More
             </Button>
         </section>

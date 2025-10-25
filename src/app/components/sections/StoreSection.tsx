@@ -33,10 +33,12 @@ export default function StoreSection() {
                     </>
                 }
                 para={
-                    <p className="w-[45%] text-lg text-muted-foreground font-medium will-change-transform">
-                        From our first outlet to multiple locations today, Pick & Pay
-                        continues to expand with one goal to bring freshness, convenience,
-                        and quality shopping closer to you.
+                    <p
+                        className="w-full text-base text-muted-foreground font-medium will-change-transform
+                        sm:w-[70%] md:w-[58%] md:text-lg"
+                    >
+                        From our first outlet to many today, Pick & Pay grows with one goal;
+                        bringing freshness, convenience, and quality closer to you.
                     </p>
                 }
             />
