@@ -11,7 +11,7 @@ export default function CustomerReviewCard({ className }: Props) {
     return (
         <div
             className={cn(
-                "flex items-center gap-3 p-3 pr-5 w-fit bg-white/10 backdrop-blur-md rounded-full shadow-md will-change-transform",
+                "flex items-center gap-3 p-3 pr-5 w-72 bg-white/10 backdrop-blur-md rounded-full shadow-md will-change-transform",
                 className
             )}
         >
@@ -30,7 +30,7 @@ export default function CustomerReviewCard({ className }: Props) {
             </div>
 
             {/* Text & Rating */}
-            <div className="flex flex-col gap-0 text-white text-sm font-medium will-change-transform">
+            <div className="text-nowrap flex flex-col gap-0 text-white text-sm font-medium will-change-transform">
                 <p>12.5k+</p>
                 <p>Happy Customers</p>
             </div>

@@ -12,6 +12,7 @@ export default function HeroSection() {
             style={{
                 backgroundImage: `url(/images/home/hero/hero-image.jpg)`,
                 backgroundSize: "cover",
+                backgroundPosition: "center",
             }}
             className={cn(
                 "min-h-screen relative -z-10 text-white flex items-center overflow-hidden",
@@ -23,23 +24,37 @@ export default function HeroSection() {
 
             {/* Title */}
             <div className="h-full flex items-center">
-                <div className="relative -top-20 space-y-5">
+                <div
+                    className="relative -top-10 space-y-5
+                    lg:-top-20"
+                >
                     <Label
                         className="border-white shadow-md"
                         icon={<Truck size={16} />}
                         text="Fast Delivery & Easy Returns"
                     />
                     <span>
-                        <h1 className={cn("text-[88px] font-extrabold")}>
+                        <h1
+                            className="text-[68px] font-extrabold leading-[1.1]
+                            lg:text-[88px]"
+                        >
                             Shop & Live Fresh.
                         </h1>
-                        <p className="text-4xl">Everything at Pick & Pay.</p>
+                        <p
+                            className="text-2xl
+                            lg:text-4xl"
+                        >
+                            Everything at Pick & Pay.
+                        </p>
                     </span>
                 </div>
             </div>
 
             {/* Customer review card */}
-            <CustomerReviewCard className="absolute -translate-x-1/2 left-1/2 bottom-40" />
+            <CustomerReviewCard
+                className="absolute -translate-x-1/2 left-1/2 bottom-30 
+                lg:bottom-40"
+            />
 
             {/* Explore */}
             <span
