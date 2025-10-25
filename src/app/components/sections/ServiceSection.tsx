@@ -72,7 +72,7 @@ export default async function ServiceSection() {
 
             {/* Button */}
             <Button className="bg-[#161c1b] hover:bg-[#161c1b]/90 p-5 px-8 mt-12 text-lg cursor-pointer shadow-md">
-                Contact Us
+                Know More
             </Button>
         </section>
     );

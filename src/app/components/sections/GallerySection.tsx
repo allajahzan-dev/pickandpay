@@ -1,7 +1,7 @@
 import { sectionClassName } from "@/constants/styles";
 import { cn } from "@/lib/utils";
 import Label from "../common/Label";
-import { Camera } from "lucide-react";
+import { ImageIcon } from "lucide-react";
 import SectionHeading from "../common/SectionHeading";
 import Shadow from "../common/Shadow";
 import MarqueeImages from "../animations/MarqueeImages";
@@ -18,7 +18,7 @@ export default function GallerySection() {
         >
             <Shadow />
             {/* Label */}
-            <Label icon={<Camera size={16} />} text="Our Gallery" />
+            <Label icon={<ImageIcon size={16} />} text="Our Gallery" />
 
             {/* Heading */}
             <SectionHeading

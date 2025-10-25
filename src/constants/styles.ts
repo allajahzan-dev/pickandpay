@@ -6,7 +6,7 @@ export const sectionBgImage: React.CSSProperties = {
 };
 
 // Section padding-x
-export const sectionXpadding = "px-4 md:px-5 lg:px-10 xl:px-32";
+export const sectionXpadding = "px-4 md:px-10 xl:px-32";
 
 // Section classname - tailwindcss
 export const sectionClassName = `h-auto bg-white relative py-24 flex flex-col gap-8 justify-center 

@@ -62,7 +62,7 @@ export default function FooterSection() {
 
                     <p className="flex items-center gap-1 text-sm">
                         <Copyright className="w-4 h-4" />
-                        {new Date().getFullYear()} Gompass. All rights reserved
+                        {new Date().getFullYear()} Pick & Pay. All rights reserved
                     </p>
                 </div>
             </div>
